@@ -1,0 +1,367 @@
+
+.navbar{
+    border-top:8px solid#3f51b5  ;
+    height: 90px;
+
+    width: 100%;
+
+}
+.logo-img{
+
+    height: 64px;
+    
+}
+.navbar .nav-link {
+  font-size: 1.5rem; 
+  
+}
+
+.ahmed {
+    width: 100%;
+    font-family: Arial, sans-serif;
+  font-size: 1.5rem; 
+    padding: 23px 20px;          
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+.ahmed:hover{
+  
+      background-color: #3f51b5 ; 
+  color: white ; 
+}
+.logo img{
+    width: 450px;
+
+}
+.navbar .nav-link {
+  
+  padding: 23px 20px;         
+  transition: background-color 0.3s ease, color 0.3s ease; }
+
+.navbar .nav-link:hover {
+   padding: 23px 20px; 
+  background-color: #3f51b5 ;
+  color: white ;  
+}
+
+
+.bg img{
+    width: 100%;
+    height: 100%;
+    
+}
+.bg button {
+
+  width: 200px; 
+  height: 60px; 
+  font-size: 1.5rem;
+}
+
+
+.info h4{
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+    text-align: center;
+      font-size: 1.8rem; 
+      font-weight: bold;
+
+}
+.info p {
+font-family: Arial, sans-serif;
+padding: 10px;
+width: 700px;
+ text-align: center;
+   margin: auto;
+  justify-content:center;
+
+}
+.news{
+    height: 900px;
+
+}
+.news h2{
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+ text-align: center;
+      font-size: 1.5rem; 
+      font-weight: bold;
+
+}
+
+.new p{
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+.news img{width: 90px;
+    height: 90px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px
+}
+
+.news p{
+    font-family: Arial, sans-serif;
+    width: 50%; 
+      font-size: 1.2rem; 
+      font-weight: bold;
+}
+.roww{
+    display: flex;               
+    align-items: center;          
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden; 
+  height: 90%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.hover-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.card:hover .hover-content {
+  opacity: 1;
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+.circle-form { margin-left: 10%;
+     background: #001330df; 
+     border-radius: 50%;
+      width: 400px;
+       height: 400px;
+        padding: 50px; 
+        color: white;
+         display: flex;
+          flex-direction: column;
+           justify-content: center;
+            align-items: center;
+             box-shadow: 0 0 15px rgba(0,0,0,0.5); }
+
+.circle-form input {
+    font-family: Arial, sans-serif;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #666;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+  width: 80%;
+}
+
+.circle-form button {
+    font-family: Arial, sans-serif;
+  background: #f3f3f9;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.card{
+    font-family: Arial, sans-serif;
+        margin-top: 30px;
+
+        }
+        .row {
+  justify-content: center;
+}
+.cards a{ 
+
+     text-decoration: none;  
+
+    margin: auto;
+
+    height: 380px;
+}
+.card h5{ 
+    font-family: Arial, sans-serif; width: 100%;
+      font-size: 1.2rem; 
+      font-weight: bold;
+
+
+}
+.Partner p{
+    padding: 10px;
+        width: 700px;
+            text-align: center;
+            margin: auto;
+             font-size: 1.8rem; 
+      font-weight: bold;
+}
+.Partner img {
+    text-decoration: none;  
+
+    margin: 20px;
+
+    
+}
+.contact-section{
+background-color: #3f51b5;
+  color: white;
+  font-family: Arial, sans-serif;
+    margin: 0;
+     display: flex;
+       flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.contact-form{
+   flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  margin-right: 40px;
+
+}
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  margin-right: 40px;
+}
+.contact-form h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.contact-form p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.contact-form button {
+  background: white;
+  color: #3f51b5;
+  font-size: 16px;
+  font-weight: bold;
+   border: solid 2px white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-form button:hover {
+  background: #3f51b5;
+  color: #f3f3f9;
+
+}
+.navbar-custom {
+  border-top: solid white 2px;
+  background-color: #3f51b5; 
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-custom .left,
+.navbar-custom .center,
+.navbar-custom .right {
+  flex: 1;
+  text-align: center;
+}
+
+.navbar-custom .left {
+  text-align: left;
+}
+
+.navbar-custom .right {
+  text-align: right;
+}
+
+
+/* alumni */
+
+header {
+    background-color:#3f51b5;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; }
+
+.hero {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.hero p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #3f51b5;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
