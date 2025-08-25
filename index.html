@@ -182,19 +182,27 @@ The announcement invites qualified candidates to join the university’s growing
 
 <div class="container my-4 text-center">
 
-  <div id="logoContainer">
-    <div id="logoTrack">      <a href="https://www.tudublin.ie/" class="logo-item"><img src="./imgs/TUD_RGB-1024x645-1.png" alt="TU Dublin"></a>
-      <a href="https://www.uma.es/" class="logo-item"><img src="./imgs/Universidad-de-Malaga.png" alt="Universidad de Málaga"></a>
-      <a href="https://www.hs-heilbronn.de/de" class="logo-item"><img src="./imgs/Hochschule-Heilbronn_Logo.jpg" alt="Heilbronn University"></a>
-      <a href="https://www.jamk.fi/fi" class="logo-item"><img src="./imgs/niagaracollege-1.png" alt="Niagara College"></a>
-      <a href="https://www.pua.edu.eg/international-cooperation/international-partners/" class="logo-item"><img src="./imgs/New-Project.png" alt="PUA Partners"></a>
-    </div>
-    <div class="mt-3">
+<div id="logoContainer" style="overflow:hidden; width:500px; margin:auto;">
+  <div id="logoTrack" style="display:flex; transition:transform 0.5s ease;">
+   
+    <a href="https://www.pua.edu.eg/international-cooperation/international-partners/" class="logo-item"><img src="./imgs/New-Project.png" alt="PUA Partners" width="150"></a>
+    
+    
+    <a href="https://www.tudublin.ie/" class="logo-item"><img src="./imgs/TUD_RGB-1024x645-1.png" alt="TU Dublin" width="150"></a>
+    <a href="https://www.uma.es/" class="logo-item"><img src="./imgs/Universidad-de-Malaga.png" alt="Universidad de Málaga" width="150"></a>
+    <a href="https://www.hs-heilbronn.de/de" class="logo-item"><img src="./imgs/Hochschule-Heilbronn_Logo.jpg" alt="Heilbronn University" width="150"></a>
+    <a href="https://www.jamk.fi/fi" class="logo-item"><img src="./imgs/niagaracollege-1.png" alt="Niagara College" width="150"></a>
+    <a href="https://www.pua.edu.eg/international-cooperation/international-partners/" class="logo-item"><img src="./imgs/New-Project.png" alt="PUA Partners" width="150"></a>
+    
+
+    <a href="https://www.tudublin.ie/" class="logo-item"><img src="./imgs/TUD_RGB-1024x645-1.png" alt="TU Dublin" width="150"></a>
+  </div>
+
+  <div class="mt-3" style="text-align:center;">
     <button id="prevBtn" class="btn btn-outline-secondary mx-1">&lt;</button>
     <button id="nextBtn" class="btn btn-outline-secondary mx-1">&gt;</button>
   </div>
 </div>
-
 <section class="contact-section">
     <div class="contact-form">
       <h2>Contact us</h2>
@@ -224,42 +232,30 @@ The announcement invites qualified candidates to join the university’s growing
 
 
 <script>
-  const track = document.getElementById('logoTrack');
-  const container = document.getElementById('logoContainer');
-  const items = Array.from(track.children);
-  const visible = 3;
-  const maxIndex = items.length - visible;    
+   const track = document.getElementById("logoTrack");
+  const nextBtn = document.getElementById("nextBtn");
+  const prevBtn = document.getElementById("prevBtn");
+
   let index = 0;
-  let step = 0;                              
+  const step = 160; 
+  const maxIndex = track.children.length - 1;
 
-  function measureAndSnap() {
-    step = container.clientWidth / visible;
+  function updateSlider() {
     track.style.transform = `translateX(-${index * step}px)`;
-  }
-
-  function setFlexBasis() {
-    items.forEach(it => it.style.flex = `0 0 ${100/visible}%`);
   }
 
   function next() {
-    index = (index >= maxIndex) ? 0 : index + 1; 
-    track.style.transform = `translateX(-${index * step}px)`;
+    index = (index >= maxIndex) ? 0 : index +1; 
+    updateSlider();
   }
 
   function prev() {
     index = (index <= 0) ? maxIndex : index - 1; 
-    track.style.transform = `translateX(-${index * step}px)`;
+    updateSlider();
   }
 
-  // Init
-  setFlexBasis();
-  measureAndSnap();
-  
-
-  // Events
-  document.getElementById('nextBtn').addEventListener('click', next);
-  document.getElementById('prevBtn').addEventListener('click', prev);
-  window.addEventListener('resize', measureAndSnap);
+  nextBtn.addEventListener("click", next);
+  prevBtn.addEventListener("click", prev);
 </script>
 
 
